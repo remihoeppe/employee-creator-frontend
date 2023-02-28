@@ -38,6 +38,7 @@ const mockProps: any = {
     mockSubmit: vi.fn((newEmployeeData) => {
         return Promise.resolve({ newEmployeeData });
     }),
+    mockCancel: vi.fn(() => {}),
 };
 
 describe("Testing API call in EmployeForm component", async () => {
@@ -47,6 +48,7 @@ describe("Testing API call in EmployeForm component", async () => {
                 <EmployeeForm
                     onFormSubmit={mockProps.mockSubmit}
                     employeeData={mockProps.fetchedEmployee}
+                    onFormCancel={mockProps.mockCancel}
                 />
             </BrowserRouter>,
         );
@@ -68,6 +70,7 @@ describe("Testing the EmployeeForm component", async () => {
                 <EmployeeForm
                     onFormSubmit={mockProps.mockSubmit}
                     employeeData={mockProps.fetchedEmployee}
+                    onFormCancel={mockProps.mockCancel}
                 />
             </BrowserRouter>,
         );

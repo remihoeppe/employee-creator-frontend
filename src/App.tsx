@@ -1,7 +1,5 @@
 import styles from "./App.module.scss";
-import EmployeeForm from "./components/EmployeeForm/OldEmployeeForm";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import EmployeesList from "./components/EmployeesList/EmployeesList";
 import NavBar from "./components/NavBar/NavBar";
 import EmployeeCreate from "./components/EmployeeCreate/EmployeeCreate";

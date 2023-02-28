@@ -15,6 +15,7 @@ const EmployeeCard = ({ employee, onDelete }: EmployeeCardProps) => {
     };
 
     const tenure = getTenure(employee.startDate, employee.endDate);
+
     return (
         <>
             {/* <Separator /> */}

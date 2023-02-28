@@ -31,7 +31,8 @@ const EmployeeUpdate = () => {
     );
 
     const handleUpdate = (employeFormData: Employee) => {
-        updateEmployee(employeFormData as UpdateEmployeeResponse, id);
+        const currentId = id ? id : "";
+        updateEmployee(employeFormData as UpdateEmployeeResponse, currentId);
         setUpdated(true);
     };
 
