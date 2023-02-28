@@ -1,0 +1,26 @@
+@import "./../../styling/theme.module.scss";
+
+.NavBar {
+    display: flex;
+
+    &__Link {
+        color: $primaryBtnText;
+        background-color: $primaryBtnBackground;
+        border-radius: 5px;
+        width: 200px;
+        height: 30px;
+        margin: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
+        flex-direction: column;
+
+        &__Link {
+            margin-bottom: 0px;
+        }
+    }
+}

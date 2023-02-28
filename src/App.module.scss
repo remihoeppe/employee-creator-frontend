@@ -1,0 +1,13 @@
+@import "./styling/theme.module.scss";
+
+.App {
+    color: $primaryText;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+
+    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
+        align-items: center;
+    }
+}

@@ -1,0 +1,32 @@
+@import "./../../styling/theme.module.scss";
+
+.EmployeeCard {
+    display: flex;
+    justify-content: space-between;
+
+    &__Btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100px;
+
+        &_Link {
+            color: $primaryBtnBackground;
+            text-decoration: underline;
+        }
+
+        &_Dlt {
+            color: $primaryBtnBackground;
+            text-decoration: underline;
+            margin: 0px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
+        width: 100%;
+    }
+}
