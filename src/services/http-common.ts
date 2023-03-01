@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default axios.create({
     baseURL:
-        "https://employeecreatorapi-env.eba-jzri62fd.us-east-2.elasticbeanstalk.com/",
+        "http://employeecreatorapi-env.eba-jzri62fd.us-east-2.elasticbeanstalk.com/",
     withCredentials: false,
     headers: {
         "Content-type": "application/json",
